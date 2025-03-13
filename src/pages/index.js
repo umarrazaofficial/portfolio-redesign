@@ -21,9 +21,6 @@ export default function Home() {
       </Head>
       <Header />
       <HeroSection />
-      <div style={{ height: "100dvh" }}>
-        <h2>Working</h2>
-      </div>
     </>
   );
 }

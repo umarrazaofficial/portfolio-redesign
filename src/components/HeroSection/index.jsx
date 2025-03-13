@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { StyledHeroSection } from "./HeroSection.style";
-import Banner from "../../../public/images/heroBanner.png";
+import Banner from "../../../public/images/heroBanner2.png";
 import { Typewriter } from "react-simple-typewriter";
 
 const HeroSection = () => {
