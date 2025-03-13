@@ -49,6 +49,9 @@ const GlobalStyles = createGlobalStyle`
   body{
     font-family: ${fonfamily.style.fontFamily};
   }
+  .primary-text{
+    color:rgb(94, 94, 240);
+  }
 `;
 export default function App({ Component, pageProps }) {
   return (

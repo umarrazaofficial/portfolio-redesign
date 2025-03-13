@@ -58,8 +58,9 @@ export const StyledHeader = styled.div`
     height: 100%;
     text-align: center;
     background-color: #19191b;
-    position: absolute;
+    position: fixed;
     inset: 0;
+    z-index: 1;
     display: flex;
     flex-direction: column;
     transition: all 0.5s ease-in-out;
