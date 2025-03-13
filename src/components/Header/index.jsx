@@ -12,7 +12,13 @@ const Header = () => {
   const handleMenuBar = () => {
     setMenuBar(!menuBar);
   };
+  useEffect(() => {
+    document.body.style.overflow = menuBar ? "hidden" : "auto";
 
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [menuBar]);
   return (
     <StyledHeader className="container">
       <Link href="/" className="logo">
