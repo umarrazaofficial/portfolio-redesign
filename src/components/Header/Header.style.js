@@ -25,6 +25,7 @@ export const StyledHeader = styled.div`
     }
     li {
       cursor: pointer;
+      text-transform: capitalize;
       font-size: 18px;
       line-height: 22px;
       font-weight: 400;
@@ -77,6 +78,7 @@ export const StyledHeader = styled.div`
       margin-bottom: 80px;
       li {
         cursor: pointer;
+        text-transform: capitalize;
         font-size: 18px;
         line-height: 22px;
         font-weight: 400;

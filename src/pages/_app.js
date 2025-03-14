@@ -1,6 +1,7 @@
 import "@/styles/globals.css";
 import { createGlobalStyle } from "styled-components";
 import localFont from "next/font/local";
+import Layout from "@/components/Layout";
 
 export const fonfamily = localFont({
   src: [
@@ -57,7 +58,9 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <GlobalStyles />
-      <Component {...pageProps} />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
     </>
   );
 }

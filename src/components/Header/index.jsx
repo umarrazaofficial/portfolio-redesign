@@ -7,6 +7,8 @@ import Button from "../molecules/Button";
 import { IoClose } from "react-icons/io5";
 import Link from "next/link";
 
+const navList = ["home", "about", "education", "experience", "projects"];
+
 const Header = () => {
   const [menuBar, setMenuBar] = useState(false);
   const handleMenuBar = () => {
@@ -25,10 +27,11 @@ const Header = () => {
         <Image src={LogoLg} alt="logo" />
       </Link>
       <ul className="list-wrap">
-        <li>Home</li>
-        <li>About</li>
-        <li>Experience</li>
-        <li>Projects</li>
+        {navList?.map((item, index) => (
+          <Link key={index} href={`/${item === "home" ? "/" : item}`}>
+            <li>{item}</li>
+          </Link>
+        ))}
       </ul>
       <Button variant="outline" width="157px" className="btn">
         Contact
@@ -46,10 +49,11 @@ const Header = () => {
           <IoClose color="white" size={22} onClick={handleMenuBar} />
         </div>
         <ul className="sm-list-wrap">
-          <li>Home</li>
-          <li>About</li>
-          <li>Experience</li>
-          <li>Projects</li>
+          {navList?.map((item, index) => (
+            <Link key={index} href={`/${item}`}>
+              <li>{item}</li>
+            </Link>
+          ))}
         </ul>
         <Button variant="outline" width="157px" className="sm-btn">
           Contact

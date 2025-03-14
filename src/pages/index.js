@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
+import MyEducation from "@/components/MyEducation";
 import Head from "next/head";
 
 export default function Home() {
@@ -19,8 +20,8 @@ export default function Home() {
         <meta name="author" content="Umar Raza" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header />
       <HeroSection />
+      <MyEducation />
     </>
   );
 }
